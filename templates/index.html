@@ -68,8 +68,8 @@
       <img src="../static/arte-principal.png">
       <img style="right:0; bottom: 80px; position: absolute;" src="../static/elemento-folha.png">
 
-      <div style="background-color: #3C718A; width: 100%; height: 80px; position: absolute; z-index: 1; bottom: 0px;">
-        <nav>
+      <div>
+        <nav style="background-color: #3C718A; width: 100%; height: 80px; position: absolute; z-index: 1; bottom: 0px; left: 0;">
           <ul>
             <li><a href="https://www.even3.com.br/21-semana-nacional-de-ciencias-e-tecnologia-491231/">Inscrições</a></li>
             <li><a href="">Programação</a></li>
@@ -78,32 +78,60 @@
 
         <style>
           nav {
+            
             ul {
               display: flex;
               list-style: none;
+              gap: 50px;
               padding: 0;
               margin: 0;
+              justify-content: center;
+              align-items: center;
+              height: 100%;
             }
             li {
-              margin-right: 20px;
+              
               a {
                 text-decoration: none;
                 color: white;
+                font-size: 1.5rem
               }
             }
           }
 
           section {
-            padding: 50px 0;
+            padding: 50px 150px;
           }
         </style>
       </div>
     </div>
 
-    <section style="background-color: #647CB4; padding-top: 0;">
-      <img style="width:100%;"src="../static/top-div.png">
+    <div style="background-color: #647CB4;">
+      <img style="width:100%;"src="../static/top-div.png">  
+    </div>
+    
+    <section class="info" style="background-color: #647CB4; padding-top: 0;">
 
-      <div style="display: flex; margin-bottom: 50px;">
+      <style>
+        .info .conteudo-info > div {
+          padding: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+          .info .conteudo-info {
+            flex-direction: column;
+
+            > div {
+              width: 100% !important;
+            }
+          }
+          section {
+            padding: 50px 50px;
+          }
+        }
+      </style>
+      
+
+      <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
         <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
           <h1 style="color: #FFF; font-size: 4rem; text-align: center;"><span style="color: #DFAA8C;">21ª</span> Semana Nacional de Ciência e Tecnologia</h1>
         </div>
@@ -124,7 +152,7 @@
 
       
 
-      <div style="display: flex; margin-bottom: 50px;">
+      <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
         <div style="width: 50%; display: flex; align-items: center;">
           <div>
             <p>E é neste vasto cenário de biodiversidade e conhecimento que Belo Jardim desponta como um símbolo de resiliência e inovação. Situada no agreste pernambucano, o município está inserido numa zona privilegiada, com destaques para as bacias hidrográficas dos rios Ipojuca e Capibaribe e, por sua vez, é recoberto por pequenas, médias e grandes nascentes, sendo necessárias ações que promovam a preservação e a conservação desses recursos, para não comprometer a capacidade de atender as necessidades das próximas gerações. </p>
@@ -137,7 +165,7 @@
         </div>
       </div>
 
-      <div style="display: flex; margin-bottom: 50px;">
+      <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
         <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
           <img class="" src="../static/img-biomas-brasil-principal.png" />
         </div>
@@ -154,7 +182,7 @@
 
 
 
-      <div style="display: flex; margin-bottom: 50px;">
+      <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
         <div style="width: 50%; display: flex; align-items: center;">
           <p>É nesse contexto de união entre natureza, ciência e tecnologia que a 21ª Semana Nacional de Ciência e Tecnologia (21ª SNCT) adquire um significado especial. Em Belo Jardim, a SNCT não é apenas uma celebração do conhecimento, mas um chamado à ação, um momento de dar voz à Caatinga e de reconhecer sua importância como patrimônio natural e cultural. O maior evento de popularização da ciência no país destaca, neste cenário, a necessidade urgente de integrar saberes tradicionais e inovações tecnológicas na construção de um Brasil mais sustentável.</p>
         </div>
@@ -177,7 +205,7 @@
       </div>
 
 
-      <h2>Confira todos os especialistas que participarão do evento:</h2>
+      <h2 style="text-align: center;">Confira todos os especialistas que participarão do evento:</h2>
 
       <div class="lista-palestrantes especialista">
         <div class="palestrante">
@@ -270,7 +298,7 @@
         </div>
       </div>
 
-      <h2>Confira todos os monitores do evento:</h2>
+      <h2 style="text-align: center;">Confira todos os monitores do evento:</h2>
 
       <div class="lista-palestrantes monitor">
         <div class="palestrante">
@@ -503,7 +531,7 @@
 
     <section>
 
-      <h2>Programação do Evento</h2>
+      <h2 style="text-align: center;">Programação do Evento</h2>
 
       <h3>Terça-feira 29/10/2024</h3>
       <ul>
