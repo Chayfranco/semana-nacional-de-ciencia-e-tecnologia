@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6192B9;
+}
+
+h1, h2, h3, h4, p, li {
+    color: #FFF;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    text-indent: 30px;
+}
+
+h1, h2 {
+    font-family: "Abril Fatface", serif;
+}
+
+h3, h4, p, li {
+    font-family: "Kanit", sans-serif;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+p, li {
+    font-weight: 400;
+    color: #FFF;
+}
+
+li {
+    p {
+        margin: 0 0 10px 0;
+        font-weight: 500;
+        color: #001047;
+        text-indent: 0px;
+    }
+}
+
+nav {
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    li {
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem
+        }
+    }
+}
+
+section {
+    padding: 50px 150px;
+}
+
+.info .conteudo-info > div {
+    padding: 20px;
+}
+
+.lista-palestrantes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.lista-palestrantes.especialista .palestrante .nome-palestrante {
+    background-color: #16406A;
+}
+
+.lista-palestrantes.monitor .palestrante .nome-palestrante {
+    background-color: #728D45;
+}
+
+.palestrante {
+
+    .foto-palestrante {
+        width: 100%;
+
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .nome-palestrante {
+        font-family: "Kanit", sans-serif;
+        color: white;
+
+        padding: 10px 20px;
+        border-radius: 0 0 10px 10px;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .info .conteudo-info {
+        flex-direction: column;
+
+        > div {
+            width: 100% !important;
+        }
+    }
+    section {
+        padding: 50px 50px;
+    }
+}
