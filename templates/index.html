@@ -10,13 +10,13 @@
 </head>
 <body>
 
-    <div style="width: 100%; height: 100vh; position: relative; display: flex; justify-content: center; align-items: center; background-color: #001047;">
-        <img style="right: 50px; top: 50px; position: absolute; height: 200px;" src="../static/img/ufrpe.png" alt="UFRPE">
-        <img style="left: 0; top: 0; position: absolute; transform: scale(-1, -1);" src="../static/img/elemento-folha.png" alt="Elemento Folha">
-        <img src="../static/img/arte-principal.png" alt="Arte Principal">
-        <img style="right: 0; bottom: 80px; position: absolute;" src="../static/img/elemento-folha.png" alt="Elemento Folha">
+    <div class="secao-capa" style="width: 100%; height: 100vh; position: relative; display: flex; justify-content: center; align-items: center; background-color: #001047;">
+        <img class="logo-ufrpe" style="right: 50px; top: 50px; position: absolute; height: 200px;" src="../static/img/ufrpe.png" alt="UFRPE">
+        <img class="elemento-folha invertido" style="left: 0; top: 0; position: absolute; transform: scale(-1, -1);" src="../static/img/elemento-folha.png" alt="Elemento Folha">
+        <img class="arte-principal" src="../static/img/arte-principal.png" alt="Arte Principal">
+        <img class="elemento-folha" style="right: 0; bottom: 80px; position: absolute;" src="../static/img/elemento-folha.png" alt="Elemento Folha" >
 
-        <nav style="background-color: #3C718A; width: 100%; height: 80px; position: absolute; z-index: 1; bottom: 0; left: 0;">
+        <nav class="menu-principal" style="background-color: #3C718A; width: 100%; height: 80px; position: absolute; z-index: 1; bottom: 0; left: 0;">
             <ul>
                 <li><a href="https://www.even3.com.br/21-semana-nacional-de-ciencias-e-tecnologia-491231/">Inscrições</a></li>
                 <li><a href="#programacao">Programação</a></li>
@@ -24,18 +24,18 @@
         </nav>
     </div>
 
-    <div style="background-color: #647CB4;">
-        <img style="width: 100%;" src="../static/img/top-div.png" alt="Top Div">
+    <div class="top-div" style="background-color: #57997a;">
+        <img class="imagem-topo" style="width: 100%;" src="../static/img/top-div-folhas.png" alt="Top Div">
     </div>
 
-    <section class="info" style="background-color: #647CB4; padding-top: 0;">
+    <section class="info" style="background-color: #57997a; padding-top: 0;">
         <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
-            <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+            <div class="titulo-info" style="width: 50%; display: flex; justify-content: center; align-items: center;">
                 <h1 style="color: #FFF; font-size: 4rem; text-align: center;">
-                    <span style="color: #DFAA8C;">21ª</span> Semana Nacional de Ciência e Tecnologia
+                    <span class="edicao" style="color: #DFAA8C;">21ª</span> Semana Nacional de Ciência e Tecnologia
                 </h1>
             </div>
-            <div style="width: 50%; display: flex; align-items: center;">
+            <div class="descricao-info" style="width: 50%; display: flex; align-items: center;">
                 <div>
                     <p>O Brasil é um país de proporções gigantescas, mas é na diversidade dos seus biomas que encontramos a verdadeira grandiosidade da nossa terra...</p>
                     <p>No coração do Nordeste, a Caatinga se destaca como um bioma singular e fascinante...</p>
@@ -44,27 +44,27 @@
             </div>
         </div>
 
-        <div style="text-align: center; margin-bottom: 50px;">
-            <img src="../static/img/img-biomas-frame.png" alt="Imagem dos Biomas">
+        <div class="imagem-centralizada-bioma-passaralho" style="text-align: center; margin-bottom: 50px;">
+            <img src="../static/img/img-passaro-frame.png" alt="Imagem de passáro">
         </div>
 
         <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
-            <div style="width: 50%; display: flex; align-items: center;">
+            <div class="descricao-info" style="width: 50%; display: flex; align-items: center;">
                 <div>
                     <p>E é neste vasto cenário de biodiversidade e conhecimento que Belo Jardim desponta como um símbolo de resiliência e inovação...</p>
                     <p>A verdade é que o município de Belo Jardim pulsa em sintonia com a Caatinga, um bioma de contrastes e beleza singular...</p>
                 </div>
             </div>
-            <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+            <div class="imagem-descritiva" style="width: 50%; display: flex; justify-content: center; align-items: center;">
                 <img src="../static/img/elemento-folha.png" alt="Elemento Folha">
             </div>
         </div>
 
         <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
-            <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+            <div class="imagem-descritiva" style="width: 50%; display: flex; justify-content: center; align-items: center;">
                 <img src="../static/img/img-biomas-brasil-principal.png" alt="Imagem Principal dos Biomas">
             </div>
-            <div style="width: 50%; display: flex; align-items: center;">
+            <div  class="descricao-info" style="width: 50%; display: flex; align-items: center;">
                 <div>
                     <p>Ao lado, o Instituto Federal de Pernambuco (IFPE) soma forças nessa missão...</p>
                     <p>A poucos quilômetros dali, Tacaimbó, com sua crescente população e sua energia vibrante...</p>
@@ -73,25 +73,25 @@
         </div>
 
         <div class="conteudo-info" style="display: flex; margin-bottom: 50px;">
-            <div style="width: 50%; display: flex; align-items: center;">
+            <div class="descricao-info" style="width: 50%; display: flex; align-items: center;">
                 <p>É nesse contexto de união entre natureza, ciência e tecnologia que a 21ª Semana Nacional de Ciência e Tecnologia (21ª SNCT)...</p>
             </div>
-            <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
-                <img src="../static/img/elemento-esquerda-croped.png" alt="Elemento Esquerda">
+            <div class="imagem-descritiva" style="width: 50%; display: flex; justify-content: center; align-items: center;">
+                <img src="../static/img/elemento-folha-esquerda-croped.png" alt="Elemento Esquerda">
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="convite">
         <h2>Portanto, a 21ª SNCT é, enfim, um convite para que todos reconheçam o poder transformador da ciência...</h2>
     </section>
 
-    <section>
-        <div style="text-align: center;">
-            <img src="../static/img/img-sabores-tradicionais-frame.png" alt="Sabores Tradicionais">
+    <section class="secao-palestrantes">
+        <div class="imagem-centralizada" style="text-align: center;">
+            <img src="../static/img/img-mundo-frame.png" alt="Sabores Tradicionais">
         </div>
 
-        <h2 style="text-align: center;">Confira todos os especialistas que participarão do evento:</h2>
+        <h2 class="titulo-secao" style="text-align: center;">Confira todos os especialistas que participarão do evento:</h2>
 
         <div class="lista-palestrantes especialista">
             <div class="palestrante">
@@ -192,382 +192,277 @@
 
         <div class="lista-palestrantes monitor">
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Jean Arruda.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Jean Arruda.jpg" alt="Jean Arruda" />
                 <div class="nome-palestrante">Jean Arruda</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Claudio Azevedo.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Claudio Azevedo.jpg" alt="Claudio Azevedo" />
                 <div class="nome-palestrante">Claudio Azevedo</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Flávia Simões.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Flávia Simões.jpg" alt="Flávia Simões" />
                 <div class="nome-palestrante">Flávia Simões</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Julio Victor.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Julio Victor.jpg" alt="Júlio Victor" />
                 <div class="nome-palestrante">Júlio Victor</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Karoline Nogueira.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Karoline Nogueira.jpg" alt="Karoline Nogueira" />
                 <div class="nome-palestrante">Karoline Nogueira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Anthonnyele Lígia.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Anthonnyele Lígia.jpg" alt="Anthonnyele Lígia" />
                 <div class="nome-palestrante">Anthonnyele Lígia</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Sabrina.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Sabrina.jpg" alt="Sabrina Soares" />
                 <div class="nome-palestrante">Sabrina Soares</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Rafael Santos.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Rafael Santos.jpg" alt="Rafael Santos" />
                 <div class="nome-palestrante">Rafael Santos</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Emilly Nayara.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Emilly Nayara.jpg" alt="Emmily Nayara" />
                 <div class="nome-palestrante">Emmily Nayara</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Ludmilla.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Ludmilla.jpg" alt="Ludmilla" />
                 <div class="nome-palestrante">Ludmilla</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Limeira.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Limeira.jpg" alt="Rodrigo Limeira" />
                 <div class="nome-palestrante">Rodrigo Limeira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Heitor Conrado.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Heitor Conrado.jpg" alt="Heitor Conrado" />
                 <div class="nome-palestrante">Heitor Conrado</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Isak Macena.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Isak Macena.jpg" alt="Isak Macena" />
                 <div class="nome-palestrante">Isak Macena</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Maria Kaylany.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Maria Kaylany.jpg" alt="Maria Kaylany" />
                 <div class="nome-palestrante">Maria Kaylany</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Anthonny Lucas.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Anthonny Lucas.jpg" alt="Anthonny Lucas" />
                 <div class="nome-palestrante">Anthonny Lucas</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/José Endson.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/José Endson.jpg" alt="José Endson" />
                 <div class="nome-palestrante">José Endson</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Leonardo Basílio.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Leonardo Basílio.jpg" alt="Leonardo Basílio" />
                 <div class="nome-palestrante">Leonardo Basílio</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Luidson Silva.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Luidson Silva.jpg" alt="Luidson Silva" />
                 <div class="nome-palestrante">Luidson Silva</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Emilly Audryn.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Emilly Audryn.jpg" alt="Emilly Audryn" />
                 <div class="nome-palestrante">Emilly Audryn</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Whylma Beatriz.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Whylma Beatriz.jpg" alt="Whylma Beatriz" />
                 <div class="nome-palestrante">Whylma Beatriz</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Rafael Arruda.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Rafael Arruda.jpg" alt="Rafael Arruda" />
                 <div class="nome-palestrante">Rafael Arruda</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Giovanna.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Giovanna.jpg" alt="Giovanna Vilela" />
                 <div class="nome-palestrante">Giovanna Vilela</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Felipe Moreira.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Felipe Moreira.jpg" alt="Felipe Moreira" />
                 <div class="nome-palestrante">Felipe Moreira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Wislany.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Wislany.jpg" alt="Wislany Rodrigues" />
                 <div class="nome-palestrante">Wislany Rodrigues</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Bianca Sayonara.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Bianca Sayonara.jpg" alt="Bianca Sayonara" />
                 <div class="nome-palestrante">Bianca Sayonara</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Raul.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Raul.jpg" alt="Raul José" />
                 <div class="nome-palestrante">Raul José</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Estefanny Rodrigues.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Estefanny Rodrigues.jpg" alt="Estefanny Rodrigues" />
                 <div class="nome-palestrante">Estefanny Rodrigues</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Marian Lima.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Marian Lima.jpg" alt="Marian Lima" />
                 <div class="nome-palestrante">Marian Lima</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Aline Siqueira.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Aline Siqueira.jpg" alt="Aline Siqueira" />
                 <div class="nome-palestrante">Aline Siqueira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Elisabethe Oliveira.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Elisabethe Oliveira.jpg" alt="Elisabethe Oliveira" />
                 <div class="nome-palestrante">Elisabethe Oliveira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Rennan Bezerra.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Rennan Bezerra.jpg" alt="Renan Bezerra" />
                 <div class="nome-palestrante">Renan Bezerra</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Thalita.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Thalita.jpg" alt="Thalita Santana" />
                 <div class="nome-palestrante">Thalita Santana</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Ariane.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Ariane.jpg" alt="Ariane Cordeiro" />
                 <div class="nome-palestrante">Ariane Cordeiro</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Lucas Alves.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Lucas Alves.jpg" alt="Lucas Alves" />
                 <div class="nome-palestrante">Lucas Alves</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Marcos.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Marcos.jpg" alt="Marcos" />
                 <div class="nome-palestrante">Marcos</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Elizangela Barros.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Elizangela Barros.jpg" alt="Elizangela Barros" />
                 <div class="nome-palestrante">Elizangela Barros</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Lucas FLorencio.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Lucas FLorencio.jpg" alt="Lucas Florencio" />
                 <div class="nome-palestrante">Lucas Florencio</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Pedro Lucas.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Pedro Lucas.jpg" alt="Pedro Lucas" />
                 <div class="nome-palestrante">Pedro Lucas</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Daniella Pereira.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Daniella Pereira.jpg" alt="Daniella Pereira" />
                 <div class="nome-palestrante">Daniella Pereira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Gabriel Rennan.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Gabriel Rennan.jpg" alt="Gabriel Renan" />
                 <div class="nome-palestrante">Gabriel Renan</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Rhuan Cavalcante.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Rhuan Cavalcante.jpg" alt="Rhuan Cavalcante" />
                 <div class="nome-palestrante">Rhuan Cavalcante</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Jair Rodrigues.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Jair Rodrigues.jpg" alt="Jair Rodrigues" />
                 <div class="nome-palestrante">Jair Rodrigues</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Gabriel Oliveira.jpeg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Gabriel Oliveira.jpeg" alt="Gabriel Oliveira" />
                 <div class="nome-palestrante">Gabriel Oliveira</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Felipe Patriota.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Felipe Patriota.jpg" alt="Felipe Patriota" />
                 <div class="nome-palestrante">Felipe Patriota</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Chaylanne.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Chaylanne.jpg" alt="Chaylane Franco" />
                 <div class="nome-palestrante">Chaylane Franco</div>
             </div>
             <div class="palestrante">
-                <img class="foto-palestrante" src="../static/img/Monitores/Pedro chagas.jpg" />
+                <img class="foto-palestrante" src="../static/img/Monitores/Pedro chagas.jpg" alt="Pedro Chagas" />
                 <div class="nome-palestrante">Pedro Chagas</div>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2 id="programacao" style="text-align: center;">Programação do Evento</h2>
-        <h3>Terça-feira 29/10/2024</h3>
-        <ul>
-            <li>Credenciamento ginásio da AEB 08h às 09h</li>
-            <li>Abertura (Cerimonial) - ginásio da AEB 09h às 09:30</li>
-            <li>Apresentação cultural - ginásio da AEB 09:30 às 11h</li>
-            <li>
+    <section class="secao-programacao">
+        <h2 id="programacao" class="titulo-secao">Programação do Evento</h2>
+
+        <h3 class="dia-programacao">Terça-feira 29/10/2024</h3>
+        <ul class="lista-atividades">
+            <li class="atividade">Credenciamento ginásio da AEB 08h às 09h</li>
+            <li class="atividade">Abertura (Cerimonial) - ginásio da AEB 09h às 09:30</li>
+            <li class="atividade">Apresentação cultural - ginásio da AEB 09:30 às 11h</li>
+            <li class="atividade">
                 Mesa redonda: o papel do CETENE no desenvolvimento social e econômico no Nordeste.
-                <p>Marcelo Leão: ginásio da AEB 11h às 12h</p>
+                <p class="descricao-atividade">Marcelo Leão: ginásio da AEB 11h às 12h</p>
             </li>
-            <li>
+            <li class="atividade">
                 Biomas de Belo Jardim
-                <p>José Rubin Barbosa Maciel Filho (Pé na estrada): ginásio da AEB 11h às 12h</p>
+                <p class="descricao-atividade">José Rubin Barbosa Maciel Filho (Pé na estrada): ginásio da AEB 11h às 12h</p>
             </li>
         </ul>
 
-        <h4>Almoço 12h às 14h</h4>
-        <ul>
-            <li>Minicurso: Técnicas de preparação de catalisador (3 horas)
-                <p>André Ribeiro - 30 vagas, 14h às 17h - Bloco A da AEB</p>
+        <h4 class="subtitulo-secao">Almoço 12h às 14h</h4>
+        <ul class="lista-atividades">
+            <li class="atividade">Minicurso: Técnicas de preparação de catalisador (3 horas)
+                <p class="descricao-atividade">André Ribeiro - 30 vagas, 14h às 17h - Bloco A da AEB</p>
             </li>
-            <li>Minicurso: API REST com Spring Framework (3 horas)
-                <p>Elias Silva e Jamerson Carlos - 30 vagas, 14h às 17h - Laboratório de Informática da UABJ</p>
+            <li class="atividade">Minicurso: API REST com Spring Framework (3 horas)
+                <p class="descricao-atividade">Elias Silva e Jamerson Carlos - 30 vagas, 14h às 17h - Laboratório de Informática da UABJ</p>
             </li>
-            <li>Minicurso: Design e fabricação de placas de circuito impresso (3 horas)
-                <p>Henrique Patriota e equipe - 30 vagas, 14h às 17h - Laboratório de Automação da UABJ</p>
+            <li class="atividade">Minicurso: Design e fabricação de placas de circuito impresso (3 horas)
+                <p class="descricao-atividade">Henrique Patriota e equipe - 30 vagas, 14h às 17h - Laboratório de Automação da UABJ</p>
             </li>
-            <li>Oficina: Descomplicando o Lattes (3 horas)
-                <p>Weslane Martin e Bruna Thorpe - 30 vagas, 14h às 17h - Bloco A da AEB</p>
+            <li class="atividade">Oficina: Descomplicando o Lattes (3 horas)
+                <p class="descricao-atividade">Weslane Martin e Bruna Thorpe - 30 vagas, 14h às 17h - Bloco A da AEB</p>
             </li>
-            <li>Oficina: Hidráulica experimental (3 horas)
-                <p>José Roberto e equipe - 30 vagas, 14h às 17h - Laboratório de Hídrica da UABJ</p>
+            <li class="atividade">Oficina: Hidráulica experimental (3 horas)
+                <p class="descricao-atividade">José Roberto e equipe - 30 vagas, 14h às 17h - Laboratório de Hídrica da UABJ</p>
             </li>
-            <li>Mesa Redonda: Professores do Departamento de Engenharia Civil e Ambiental - UFPE (3 horas)
-                <p>Anderson Paiva, Sylvana Melo e Leidjane Maciel - 30 vagas, 14h às 17h - Sala de Desenho UABJ</p>
+            <li class="atividade">Mesa Redonda: Professores do Departamento de Engenharia Civil e Ambiental - UFPE (3 horas)
+                <p class="descricao-atividade">Anderson Paiva, Sylvana Melo e Leidjane Maciel - 30 vagas, 14h às 17h - Sala de Desenho UABJ</p>
             </li>
-            <li>Competição de programação (3 horas)
-                <p>Felipe Patriota e Luis Davi - 30 vagas (10 equipes), 14h às 17h - Instituto Conceição Moura</p>
+            <li class="atividade">Competição de programação (3 horas)
+                <p class="descricao-atividade">Felipe Patriota e Luis Davi - 30 vagas (10 equipes), 14h às 17h - Instituto Conceição Moura</p>
             </li>
-            <li>Minicurso: Introdução ao LaTeX e Overleaf (3 horas)
-                <p>Fábio Novaes - 30 vagas, 14h às 17h - AEB - Espaço Xucuru</p>
-            </li>
-        </ul>
-
-        <h3>Quarta-Feira 30/10/2024</h3>
-        <ul>
-            <li>Credenciamento UABJ 08h às 09h</li>
-            <li>Oficina: Desenvolvimento de chatbots (2 horas)
-                <p>Izadora Freitas e Matheus Gabriel - 20 vagas - UABJ</p>
-            </li>
-            <li>Oficina: Criação de sequência de LED com Arduino (2 horas)
-                <p>Ana Flávia Toscano, Pedro Vitor e Thalles Rodrigues - 20 vagas - Laboratório de Eletrônica</p>
-            </li>
-            <li>Oficina: Análise de Dados (2 horas)
-                <p>Lucas Sotero e Santiago Henrique - 20 vagas - Laboratório de Eletrônica</p>
-            </li>
-            <li>Oficina: Desenvolvimento Web (2 horas)
-                <p>Chaylane Franco e Jair Rodrigues - 20 vagas - AEB Xucuru</p>
-            </li>
-            <li>Oficina: Criação de jogos com Unity (2 horas)
-                <p>Adriano da Silva e José Guilherme - 20 vagas - UABJ - Laboratório de Computação</p>
-            </li>
-            <li>Minicurso: Gestão e gerenciamento de projetos (2 horas)
-                <p>Felipe Garcez - 20 vagas - AEB</p>
+            <li class="atividade">Minicurso: Introdução ao LaTeX e Overleaf (3 horas)
+                <p class="descricao-atividade">Fábio Novaes - 30 vagas, 14h às 17h - AEB - Espaço Xucuru</p>
             </li>
         </ul>
 
-        <h4>Almoço 12h às 14h</h4>
-        <ul>
-            <li>Oficina: Introdução à programação em Python (2 horas)
-                <p>Douglas Viana, Gabriel Pinheiro e Keila Roberta - 20 vagas - UABJ - Laboratório de Computação</p>
+        <h3 class="dia-programacao">Quarta-Feira 30/10/2024</h3>
+        <ul class="lista-atividades">
+            <li class="atividade">Credenciamento UABJ 08h às 09h</li>
+            <li class="atividade">Oficina: Desenvolvimento de chatbots (2 horas)
+                <p class="descricao-atividade">Izadora Freitas e Matheus Gabriel - 20 vagas - UABJ</p>
             </li>
-            <li>Oficina: Introdução ao Fusion 360 (2 horas)
-                <p>Valdir Zacarias e Vitor Jorge - 20 vagas - UABJ - Laboratório de Computação</p>
+            <li class="atividade">Oficina: Criação de sequência de LED com Arduino (2 horas)
+                <p class="descricao-atividade">Ana Flávia Toscano, Pedro Vitor e Thalles Rodrigues - 20 vagas - Laboratório de Eletrônica</p>
             </li>
-            <li>Minicurso: Métodos de extração e caracterização de carotenoides de sementes do urucum (4 horas)
-                <p>Carlos André - 15 vagas - Laboratório de Química da UABJ</p>
+            <li class="atividade">Oficina: Análise de Dados (2 horas)
+                <p class="descricao-atividade">Lucas Sotero e Santiago Henrique - 20 vagas - Laboratório de Eletrônica</p>
             </li>
-            <li>Minicurso: Detecção de objetos com YOLO (3 horas)
-                <p>Elias Silva, Matheus Rubem e Nathan Cunha - 20 vagas - Laboratório de Eletrônica da UABJ</p>
+            <li class="atividade">Oficina: Desenvolvimento Web (2 horas)
+                <p class="descricao-atividade">Chaylane Franco e Jair Rodrigues - 20 vagas - AEB Xucuru</p>
             </li>
-            <li>Oficina: Introdução ao Matlab para engenheiros (2 horas)
-                <p>Moisés Tavares - 16 vagas - AEB - Espaço Xucuru</p>
+            <li class="atividade">Oficina: Criação de jogos com Unity (2 horas)
+                <p class="descricao-atividade">Adriano da Silva e José Guilherme - 20 vagas - UABJ - Laboratório de Computação</p>
             </li>
-        </ul>
-
-        <h3>Quarta-Feira 30/10/2024 (Tacaimbó-PE)</h3>
-        <ul>
-            <li>Oficina: Bora reagir?
-                <p>Meninas na Ciência - 20 vagas - Tacaimbó 09h às 12h</p>
-            </li>
-            <li>Oficina: Eletrônica Básica (3 horas)
-                <p>Meninas na Ciência - 20 vagas - Tacaimbó 09h às 12h</p>
-            </li>
-            <li>Oficina: Programação (3 horas)
-                <p>Meninas na Ciência - 20 vagas - Tacaimbó 09h às 12h</p>
-            </li>
-            <li>Oficina: Hidráulica (3 horas)
-                <p>Meninas na Ciência - 20 vagas - Tacaimbó 09h às 12h</p>
-            </li>
-            <li>Minicurso: Robótica livre em escola de tempo integral (3 horas)
-                <p>Edilson Moura - 20 vagas - Tacaimbó 09h às 12h</p>
-            </li>
-            <li>Carro do Espaço Ciência e da Neoenergia 09h às 12h</li>
-            <li>Roda de conversa: Mulheres na área STEM (1 hora)
-                <p>Milene Figueira - Tacaimbó</p>
+            <li class="atividade">Minicurso: Gestão e gerenciamento de projetos (2 horas)
+                <p class="descricao-atividade">Felipe Garcez - 20 vagas - AEB</p>
             </li>
         </ul>
 
-        <h4>Almoço 12h às 14h</h4>
-        <ul>
-            <li>Amostras Interativas (3 horas)
-                <p>Thaisa Alves - Tacaimbó</p>
+        <h4 class="subtitulo-secao">Almoço 12h às 14h</h4>
+        <ul class="lista-atividades">
+            <li class="atividade">Oficina: Introdução à programação em Python (2 horas)
+                <p class="descricao-atividade">Douglas Viana, Gabriel Pinheiro e Keila Roberta - 20 vagas - UABJ - Laboratório de Computação</p>
             </li>
-            <li>Oficina: Sistema de Sensoriamento de Distância com Arduino (3 horas)
-                <p>Henrique Patriota e Monitores - Tacaimbó</p>
+            <li class="atividade">Oficina: Introdução ao Fusion 360 (2 horas)
+                <p class="descricao-atividade">Valdir Zacarias e Vitor Jorge - 20 vagas - UABJ - Laboratório de Computação</p>
             </li>
-            <li>Minicurso: Curso de Minifoguetes (3 horas)
-                <p>Eduardo Nabinger - 20 vagas - Tacaimbó</p>
+            <li class="atividade">Minicurso: Métodos de extração e caracterização de carotenoides de sementes do urucum (4 horas)
+                <p class="descricao-atividade">Carlos André - 15 vagas - Laboratório de Química da UABJ</p>
             </li>
-            <li>Oficina: Fabricação e aplicação da Geotinta (3 horas)
-                <p>Adriana de Fátima e Joycy Samira - Tacaimbó</p>
+            <li class="atividade">Minicurso: Detecção de objetos com YOLO (3 horas)
+                <p class="descricao-atividade">Elias Silva, Matheus Rubem e Nathan Cunha - 20 vagas - Laboratório de Eletrônica da UABJ</p>
             </li>
-            <li>Palestra: Energia elétrica renovável (1 hora)
-                <p>Rhuan Cavalcanti - 30 vagas - Tacaimbó</p>
-            </li>
-            <li>Oficina: Grupo Batuque: Explorando o ritmo com visão computacional (3 horas)
-                <p>Edson Nunes e equipe - Tacaimbó</p>
-            </li>
-            <li>Carro do Espaço Ciência e da Neoenergia</li>
-        </ul>
-
-        <h3>Quinta-Feira 31/10/2024</h3>
-        <ul>
-            <li>Credenciamento e Boas Vindas 08h às 09h</li>
-            <li>Oficina: Equipe Zabumbaja SAE - Projeto e desenvolvimento de um veículo off-road de competição estudantil
-                <p>20 vagas - AEB</p>
-            </li>
-            <li>Minicurso: Quem disse? Passos para a Revisão de Literatura
-                <p>Weslane Martins - 20 vagas - AEB</p>
-            </li>
-            <li>Oficina: Análise experimental da qualidade da água (1 hora)
-                <p>Marcela Paiva (gerente da ETE de Petrolina) - Laboratório de Química UABJ</p>
-            </li>
-            <li>Feira Oxê: Exposição de Artesanato
-                <p>Ginásio da AEB</p>
-            </li>
-            <li>Feira de Ciências: Explorando os fundamentos da física na prática
-                <p>Fábio Novaes - Ginásio da AEB</p>
-            </li>
-            <li>Palestra: Modelagem Computacional de Nanotubos de Carbono (1 hora)
-                <p>Eduardo Castro - Ginásio da AEB</p>
-            </li>
-            <li>Mesa Redonda: Como exercer legalmente a profissão de engenharia química (1 hora)
-                <p>Ana Catarina Gomes de Amorim (CRQ) - Ginásio da AEB</p>
-            </li>
-        </ul>
-
-        <h4>Almoço 12h às 14h</h4>
-        <ul>
-            <li>Aula Inaugural - Reitora Maria José</li>
-            <li>Minicurso: Dinâmica e determinação do sequestro do dióxido de carbono (CO2) por espécies florestais (2 horas)
-                <p>Thaiza Alves - 20 vagas - Laboratório de Hídrica UABJ</p>
-            </li>
-            <li>Oficina: Pré-cálculo para ingressantes (2 horas)
-                <p>Éber Vizzarreta - 20 vagas - AEB Bloco A</p>
-            </li>
-            <li>Minicurso: Oratória para perder a timidez (3 horas)
-                <p>Luciano Junior - 20 vagas - AEB Bloco A</p>
-            </li>
-            <li>Minicurso: Fibras ópticas: aplicações em sistemas de comunicação e sensoriamento (2 horas)
-                <p>Henrique Patriota, Márcio, Douglas e Pedro - 20 vagas - Laboratório de Eletrônica UABJ</p>
-            </li>
-            <li>Minicurso: Introdução à Lógica Proposicional (2 horas)
-                <p>Auri Pereira da Silva - 20 vagas - AEB Bloco A</p>
-            </li>
-        </ul>
-
-        <h3>Sexta-Feira 01/11/2024</h3>
-        <ul>
-            <li>Competições Esportivas Atléticas
-                <p>Quadra do IFPE</p>
-            </li>
-        </ul>
-
-        <h4>Almoço 12h às 14h</h4>
-        <ul>
-            <li>Competições Esportivas Atléticas
-                <p>Quadra do IFPE</p>
+            <li class="atividade">Oficina: Introdução ao Matlab para engenheiros (2 horas)
+                <p class="descricao-atividade">Moisés Tavares - 16 vagas - AEB - Espaço Xucuru</p>
             </li>
         </ul>
     </section>
