@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #05334B;
+    font-family: "Kanit", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-weight: 400;
+    color: #FFF;
+    line-height: 1.6;
+}
+
+.edicao {
+    color: #DFAA8C;
+    width: 20%;
+}
+
+.secao-capa {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(80deg, #05334B, #3C718A, #2C5871);
+}
+
+
+.logo-ufrpe {
+    right: 50px;
+    top: 80px;
+    position: absolute;
+    height: 200px;
+}
+
+.elemento-folha {
+    position: absolute;
+}
+
+.elemento-folha.invertido {
+    left: 0;
+    top: 80px;
+    transform: scale(-1, -1);
+}
+
+.elemento-folha {
+    right: 0;
+    bottom: 80px;
+}
+
+.arte-principal {
+    position: absolute;
+}
+
+.menu-principal {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #3C718A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.menu-principal li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 2.2rem;
+    transition: color 0.3s;
+}
+
+.menu-principal li a:hover {
+    color: #64ffc2;
+}
+
+.barra {
+    background: linear-gradient(80deg, #05334B, #3C718A, #05334B);
+    height: 40px;
+}
+
+.barra-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05334B;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.barra-topo .mini-arte-principal {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.barra-topo .menu-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.barra-topo ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra-topo li {
+    display: flex;
+    align-items: center;
+}
+
+.barra-topo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.barra-topo a:hover {
+    background-color: #2C5871;
+}
+
+.top-div {
+    background-color: #57997a;
+    margin-bottom: -8rem;
+}
+
+.imagem-topo {
+    width: 100%;
+}
+
+.info {
+    padding-top: 0;
+    background-color: #57997a;
+}
+.descricao-info-principal {
+    padding-top: 0;
+    background-color: #57997a;
+    display: flex; /* Adicionado para centralizar verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: justify; /* Justifica o texto */
+    font-size: 2.4rem;
+}
+
+.conteudo-info {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8rem;
+}
+
+.descricao-info {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.descricao-info p {
+    font-size: 2.4rem;
+}
+
+.imagem-centralizada-bioma-passaralho {
+    text-align: center;
+    height: auto;
+}
+.convite h2{
+    font-size: 3rem;
+    padding-inline: 10rem;
+}
+
+.lista-palestrantes {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-bottom: 50px;
+    padding-inline: 10rem;
+}
+
+.lista-palestrantes.especialista .palestrante .nome-palestrante {
+    background-color: #16406A;
+}
+
+.lista-palestrantes.monitor .palestrante .nome-palestrante {
+    background-color: #728D45;
+}
+
+.palestrante {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.palestrante:hover {
+    transform: scale(1.05);
+}
+
+.palestrante .foto-palestrante {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.palestrante:hover .foto-palestrante {
+    transform: scale(1.1);
+}
+
+.palestrante .nome-palestrante {
+    font-family: "Kanit", sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.secao-programacao {
+    padding: 1rem;
+    background-color: #2C5871;
+    border-radius: 40px;
+    margin: 2rem auto;
+    max-width: 70%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.titulo-secao {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.dia-programacao {
+    font-size: 2.8rem;
+    margin-top: 20px;
+    color: #64ffc2;
+}
+
+.lista-atividades {
+    list-style: none;
+    padding-block: 2rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.atividade {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #FFF;
+    color: #ffe500;
+    padding-block: 1rem;
+
+}
+
+.descricao-atividade {
+    margin: 0;
+    font-size: 1.9rem;
+    color: #fa9000;
+    text-indent: 15px;
+}
+
+.subtitulo-secao {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #FFF;
+}
+
+.imagem-descritiva{
+    width: 50%;
+    display: flex; justify-content: center; align-items: center
+}
+
+.poster-imagem {
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .conteudo-info {
+        flex-direction: column;
+    }
+
+    .secao-programacao {
+        padding: 30px 20px;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-secao, .dia-programacao {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .lista-palestrantes {
+        grid-template-columns: 1fr;
+    }
+}
