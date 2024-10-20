@@ -201,13 +201,13 @@ p:hover, li:hover {
 }
 
 /* Topo */
-.top-div {
+.top-div-info {
     background-color: #57997a;
     margin-bottom: -8rem;
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.imagem-topo {
+.imagem-topo-indo {
     width: 100%;
 }
 

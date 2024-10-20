@@ -1,0 +1,399 @@
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        margin: 8px 0;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    p, li {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .menu-principal {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .menu-principal ul {
+        gap: 8px;
+    }
+
+    .menu-principal li a {
+        font-size: 1rem;
+        padding: 6px;
+    }
+
+    .barra-topo {
+        height: 50px;
+        padding: 0 5px;
+    }
+
+    .barra-topo li a {
+        font-size: 1rem;
+        padding: 6px;
+    }
+
+    .conteudo-info {
+        flex-direction: column;
+        margin-inline: 0.5rem;
+        text-align: center;
+    }
+
+    .descricao-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .convite h2 {
+        font-size: 1.3rem;
+        padding-inline: 0.5rem;
+    }
+
+
+    .poster-imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .secao-programacao {
+        padding: 0.5rem;
+    }
+
+    .atividade, .subtitulo-secao {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .dia-programacao {
+        font-size: 1.1rem;
+        margin: 0.8rem 0;
+    }
+
+    .descricao-atividade {
+        font-size: 0.8rem;
+        padding-left: 0.5rem;
+    }
+
+
+    .logo-ufrpe {
+        height:  15%;
+    }
+
+    .elemento-folha, .elemento-folha.invertido {
+        height:  25%;
+    }
+
+    .arte-principal {
+        height: 40%;
+    }
+
+    .info {
+        padding: 0.5rem;
+    }
+
+    .conteudo-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0;
+    }
+
+    .descricao-info-principal,
+    .descricao-info {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .descricao-info-principal h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .descricao-info-principal p,
+    .descricao-info p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+
+    .imagem-centralizada-bioma-passaralho,
+    .imagem-descritiva {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 0;
+    }
+
+    .imagem-centralizada-bioma-passaralho img,
+    .imagem-descritiva img {
+        width: 50%;
+    }
+
+    /* Estilo para a seção .convite */
+    .convite {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .convite h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        }
+
+    #folha-info{
+        display: none;
+    }
+
+    .titulo-secao{
+        font-size: 1.5rem;
+    }
+    .lista-palestrantes {
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 1rem;
+    }
+
+    .foto-palestrante {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+        transition: transform 0.4s ease;
+    }
+    .nome-palestrante {
+        padding: 0.5rem;
+        font-size: 0.8rem; /* Reduz o tamanho da fonte para dispositivos pequenos */
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 481px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 10px 0;
+    }
+
+    h2, h3, h4 {
+        font-size: 1.6rem;
+    }
+
+    p, li {
+        font-size: 1rem;
+    }
+
+    .menu-principal ul {
+        gap: 15px;
+    }
+
+    .menu-principal li a {
+        font-size: 1.3rem;
+    }
+
+    .conteudo-info {
+        margin-inline: 1.5rem;
+    }
+
+    .descricao-info {
+        width: 100%;
+        text-align: center;
+    }
+    .descricao-info-principal p,
+    .descricao-info p {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+    .convite h2 {
+        font-size: 1.8rem;
+        padding-inline: 1.5rem;
+    }
+
+    .lista-palestrantes {
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 1rem;
+    }
+
+    .imagem-centralizada-bioma-passaralho img,
+    .imagem-descritiva img {
+        height: auto;
+    }
+
+    .poster-imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .secao-programacao {
+        padding: 0.8rem;
+    }
+
+    .atividade, .subtitulo-secao {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .dia-programacao {
+        font-size: 1.3rem;
+    }
+
+    .descricao-atividade {
+        font-size: 0.9rem;
+        padding-left: 0.6rem;
+    }
+
+
+    .logo-ufrpe {
+        height:  20%;
+    }
+
+    .elemento-folha, .elemento-folha.invertido {
+        height:  40%;
+    }
+
+    .arte-principal {
+        height: 50%;
+    }
+
+    .convite h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+    .titulo-secao{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2, h3, h4 {
+        font-size: 2rem;
+    }
+
+    p, li {
+        font-size: 1.1rem;
+    }
+
+    .menu-principal ul {
+        gap: 30px;
+    }
+
+    .menu-principal li a {
+        font-size: 1.5rem;
+    }
+
+    .conteudo-info {
+        margin-inline: 3rem;
+    }
+
+    .descricao-info {
+        width: 80%;
+        text-align: center;
+    }
+
+    .convite h2 {
+        font-size: 2.2rem;
+        padding-inline: 3rem;
+    }
+
+    .lista-palestrantes {
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 2rem;
+    }
+
+    .poster-imagem {
+        height: auto;
+    }
+
+    .secao-programacao {
+        padding: 1rem;
+    }
+
+    .atividade, .subtitulo-secao {
+        font-size: 1.2rem;
+    }
+
+    .dia-programacao {
+        font-size: 1.5rem;
+    }
+
+    .descricao-atividade {
+        font-size: 1rem;
+    }
+    .titulo-secao{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2, h3, h4 {
+        font-size: 2.3rem;
+    }
+
+    p, li {
+        font-size: 1.2rem;
+    }
+
+    .menu-principal ul {
+        gap: 50px;
+    }
+
+    .menu-principal li a {
+        font-size: 1.8rem;
+    }
+
+    .conteudo-info {
+        margin-inline: 5rem;
+    }
+
+    .descricao-info {
+        width: 50%;
+        text-align: left;
+    }
+
+    .convite h2 {
+        font-size: 2.5rem;
+        padding-inline: 5rem;
+    }
+
+    .lista-palestrantes {
+        grid-template-columns: repeat(4, 1fr);
+        padding-inline: 3rem;
+    }
+
+    .poster-imagem {
+        height: auto;
+    }
+
+    .secao-programacao {
+        padding: 1.5rem;
+    }
+
+    .atividade, .subtitulo-secao {
+        font-size: 1.4rem;
+    }
+
+    .dia-programacao {
+        font-size: 1.7rem;
+    }
+
+    .descricao-atividade {
+        font-size: 1.1rem;
+    }
+
+
+    .titulo-secao{
+        font-size: 2.5rem;
+    }
+}
