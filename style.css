@@ -1,8 +1,7 @@
-/* Corpo */
 body {
     margin: 0;
     padding: 0;
-    background-color: #02283A;
+    background-color: #3486af;
     font-family: "Kanit", sans-serif;
     animation: fadeIn 2s ease-in-out;
 }
@@ -21,16 +20,15 @@ h1, h2 {
     font-weight: 400;
     color: #FFFFFF;
     animation: fadeIn 1.5s ease-in-out;
-    transition: color 0.4s ease, transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 h1:hover, h2:hover {
-    color: #64ffc2;
     transform: scale(1.02);
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     margin: 20px 0;
 }
@@ -41,20 +39,20 @@ h2, h3, h4 {
     margin-bottom: 25px;
 }
 
+/* Text Elements */
 p, li {
     font-weight: 400;
     color: #FFFFFF;
     line-height: 1.8;
     font-size: 1.2rem;
-    transition: color 0.4s ease, transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 p:hover, li:hover {
-    color: #64ffc2;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-/* Seção da Capa */
+/* Capa Section */
 .secao-capa {
     width: 100%;
     height: 100vh;
@@ -62,25 +60,29 @@ p:hover, li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(80deg, #02283A, #316F85, #1F4F6A);
+    background: linear-gradient(135deg, #001047, #1A2B5F, #3A4A8D);
     animation: fadeIn 2s ease-in-out;
+}
+
+.logo-ufrpe, .arte-principal, .elemento-folha {
+    position: absolute;
+    transition: transform 0.5s ease;
 }
 
 .logo-ufrpe {
     right: 50px;
     top: 90px;
-    position: absolute;
-    height: 220px;
-    transition: transform 0.5s ease;
+    height: 25%;
 }
 
-.logo-ufrpe:hover {
-    transform: scale(1.1);
+.logo-ufrpe:hover, .arte-principal:hover {
+    transform: scale(1.05);
 }
 
 .elemento-folha {
-    position: absolute;
-    transition: transform 0.5s ease;
+    height: 45%;
+    right: 0;
+    bottom: 80px;
 }
 
 .elemento-folha.invertido {
@@ -89,21 +91,11 @@ p:hover, li:hover {
     transform: scale(-1, -1);
 }
 
-.elemento-folha {
-    right: 0;
-    bottom: 80px;
-}
-
 .arte-principal {
-    position: absolute;
-    transition: transform 0.5s ease;
+    height: 75%;
 }
 
-.arte-principal:hover {
-    transform: scale(1.1);
-}
-
-/* Menu */
+/* Menu Styles */
 .menu-principal {
     position: absolute;
     bottom: 0;
@@ -125,18 +117,32 @@ p:hover, li:hover {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 2.5rem;
-    transition: color 0.4s ease, transform 0.4s ease;
+    transition: transform 0.4s ease;
 }
 
 .menu-principal li a:hover {
-    color: #64ffc2;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Barra de Topo */
 .barra {
-    background: linear-gradient(80deg, #02283A, #316F85, #02283A);
+    background: linear-gradient(135deg, #001047, #1A2B5F, #3A4A8D);
     height: 40px;
+}
+
+.barra-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #001047;
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    animation: slideInFromTop 1s ease-in-out;
 }
 
 @keyframes slideInFromTop {
@@ -148,28 +154,6 @@ p:hover, li:hover {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-/* Barra de Topo */
-.barra-topo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #02283A;
-    width: 100%;
-    height: 90px;
-    padding: 0 20px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    animation: slideInFromTop 1s ease-in-out; /* Aplicando a animação */
-}
-
-
-.barra-topo .mini-arte-principal {
-    height: 60px;
-    margin-right: 20px;
 }
 
 .barra-topo ul {
@@ -185,7 +169,7 @@ p:hover, li:hover {
 .barra-topo li a {
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 3.2rem;
+    font-size: 1.8rem;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.4s ease, transform 0.4s ease;
@@ -193,55 +177,54 @@ p:hover, li:hover {
 }
 
 .barra-topo a:hover {
-    background-color: #1F4F6A;
-    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
 }
 
-/* Topo */
-.top-div {
-    background-color: #57997a;
-    margin-bottom: -8rem;
+
+.mini-arte-principal {
+    margin-top: 0.5rem;
+    height: 2.7rem;
+}
+
+/* Top Info */
+.top-div-info {
+    background-color: #647CB4;
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.imagem-topo {
+.imagem-topo-indo {
     width: 100%;
 }
 
-/* Informações */
-.edicao {
-    color: #DFA76C;
+/* Information Sections */
+.info, .descricao-info-principal {
+    background-color: #647CB4;
+    line-height: 1.6;
 }
 
-.info, .descricao-info-principal {
-    background-color: #57997a;;
-    line-height: 1.6;
+.edicao {
+    color: #DFA76C;
 }
 
 .descricao-info-principal {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: justify;
     text-align: center;
 }
 
-/* Parágrafos dentro das classes .descricao-info e .descricao-info-principal */
-.descricao-info p, .descricao-info-principal p {
+.descricao-info-principal p, .descricao-info p {
     color: #FFFFFF;
-    font-size: 2.4rem;
-    transition: color 0.4s ease, transform 0.4s ease;
-}
-
-.descricao-info p:hover, .descricao-info-principal p:hover {
-    color: #64ffc2;
-    transform: scale(1.05);
+    font-size: 1.8rem;
+    transition: transform 0.4s ease;
 }
 
 .conteudo-info {
     display: flex;
-    margin-bottom: 10px;
-    padding: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10rem;
 }
 
 .descricao-info {
@@ -249,27 +232,35 @@ p:hover, li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
-.imagem-centralizada-bioma-passaralho {
-    text-align: center;
-    height: auto;
+/* Image Elements */
+.imagem-centralizada-bioma-passaralho, .imagem-descritiva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
     animation: fadeIn 1.5s ease-in-out;
 }
 
+.imagem-centralizada-bioma-passaralho img, .imagem-descritiva img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /* Convite */
 .convite h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     padding-inline: 10rem;
-    transition: color 0.4s ease;
 }
 
-.convite h2:hover {
-    color: #64ffc2;
+/* Palestrantes Section */
+.imagem-centralizada-mundo {
+    text-align: center;
 }
 
-/* Palestrantes */
 .lista-palestrantes {
     display: grid;
     gap: 20px;
@@ -279,7 +270,7 @@ p:hover, li:hover {
 }
 
 .lista-palestrantes.especialista .palestrante .nome-palestrante {
-    background-color: #509ABC;
+    background-color: #16406A;
 }
 
 .lista-palestrantes.monitor .palestrante .nome-palestrante {
@@ -292,181 +283,106 @@ p:hover, li:hover {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .palestrante:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
-.palestrante .foto-palestrante {
+.foto-palestrante {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: transform 0.4s ease;
 }
 
 .palestrante:hover .foto-palestrante {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.palestrante .nome-palestrante {
+.nome-palestrante {
     font-family: "Kanit", sans-serif;
     color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 0 0 10px 10px;
+    padding: 0.5rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    border-radius: 0 0 10px 10px;
+    overflow-wrap: break-word;
+    line-height: 1.2;
+    max-width: 100%;
 }
 
-/* Programação */
+
+/* Programação Section */
 .secao-programacao {
     padding: 1rem;
-    background-color: #1F4F6A;
-    border-radius: 40px;
+    background-color: #6192B9;
     margin: auto;
-    max-width: 80%;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 4rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Consistent hover effect across titles and activities */
-.titulo-secao, .dia-programacao, .atividade, .descricao-atividade, .subtitulo-secao, .convite h2, p, li{
-    transition: color 0.4s ease, transform 0.4s ease;
+.titulo-secao, .dia-programacao, .atividade, .descricao-atividade, .subtitulo-secao {
+    transition: transform 0.3s ease;
 }
 
-/* Title section */
 .titulo-secao {
-    font-size: 3.8rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
     color: #FFFFFF;
-}
-
-.titulo-secao:hover {
-    color: #64ffc2;
-    transform: scale(1.05);
-}
-
-/* Day heading */
-.dia-programacao {
-    font-size: 3rem;
-    margin-top: 10px;
-    color: #64ffc2;
-}
-
-.dia-programacao:hover {
-    color: #FFFFFF;
-    transform: scale(1.05);
-}
-
-/* Activity list */
-.lista-atividades {
-    list-style: none;
-    padding-block: 2rem;
-    margin: 20px 0;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-/* Individual activity */
-.atividade {
-    margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 2.2rem;
-    color: #FFE500;
-    padding-block: 1rem;
-}
-
-.atividade:hover {
-    color: #64ffc2;
-    transform: scale(1.05);
-}
-
-/* Activity description */
-.descricao-atividade {
-    margin: 0;
-    font-size: 2rem;
-    color: #FA9000;
-    text-indent: 15px;
-}
-
-.descricao-atividade:hover {
-    color: #64ffc2;
-    transform: scale(1.05);
-}
-
-/* Section subtitle */
-.subtitulo-secao {
-    font-size: 2.5rem;
-    margin-top: 20px;
+.dia-programacao {
+    font-size: 1.8rem;
     color: #FFFFFF;
+    font-weight: bold;
+    margin: 1.5rem 0 0.5rem;
 }
 
-.subtitulo-secao:hover {
-    color: #64ffc2;
-    transform: scale(1.05);
+.lista-atividades {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.imagem-descritiva {
-    width: 50%;
+.atividade {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #FFFFFF;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-/* Pôster */
+.descricao-atividade {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #001047;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.subtitulo-secao {
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    margin: 1rem 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Footer */
 .poster-imagem {
     width: 100%;
     transition: transform 0.4s ease;
 }
 
-/* Responsivo */
-@media only screen and (max-width: 768px) {
-    .conteudo-info {
-        flex-direction: column;
-    }
 
-    .secao-programacao {
-        padding: 30px 20px;
-    }
-
-    .menu-principal ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .titulo-secao, .dia-programacao {
-        font-size: 2rem;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 2.2rem;
-    }
-
-    .barra-topo a {
-        font-size: 2.2rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .menu-topo-barra-topo li {
-        font-size: 4.8rem;
-    }
-
-    .barra-topo {
-        padding: 15px 0;
-        height: auto;
-    }
-
-    .lista-palestrantes {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .menu-principal li a {
-        font-size: 2rem;
-    }
-}
