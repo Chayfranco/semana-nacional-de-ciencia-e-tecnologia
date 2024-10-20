@@ -176,8 +176,9 @@ p:hover, li:hover {
     text-align: center;
 }
 
-.barra-topo a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+.barra-topo li a:hover {
+    background-color: #FFFFFF;
+    color: #647CB4;
     transform: scale(1.05);
 }
 
@@ -291,12 +292,26 @@ p:hover, li:hover {
     transform: scale(1.02);
 }
 
+.palestrante {
+    width: 100%; /* O contêiner ocupa 100% da largura disponível */
+    max-width: 250px; /* Define um valor máximo para garantir consistência em telas maiores */
+    margin: 0 auto; /* Centraliza o contêiner */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
 .foto-palestrante {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
+    width: 100%; /* Ocupa a largura total do contêiner */
+    aspect-ratio: 3 / 4; /* Define uma proporção fixa (vertical) */
+    object-fit: cover; /* Preenche o espaço mantendo a proporção */
+    object-position: center; /* Centraliza a imagem */
     transition: transform 0.4s ease;
+    border-radius: 10px 10px 0 0;
+    background-color: #f0f0f0; /* Fundo para áreas vazias, se houver */
 }
 
 .palestrante:hover .foto-palestrante {
@@ -308,12 +323,15 @@ p:hover, li:hover {
     color: #FFFFFF;
     padding: 0.5rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem; /* Usa unidades rem para ajustar automaticamente */
+    background-color: #509ABC; /* Cor de fundo para contraste */
     border-radius: 0 0 10px 10px;
     overflow-wrap: break-word;
     line-height: 1.2;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Inclui padding na largura total */
 }
+
 
 
 /* Programação Section */
@@ -351,7 +369,7 @@ p:hover, li:hover {
 
 .atividade {
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 0.2rem;
     color: #FFFFFF;
     padding: 1rem;
     margin: 0.5rem 0;
@@ -375,7 +393,7 @@ p:hover, li:hover {
     font-size: 1.6rem;
     color: #FFFFFF;
     margin: 1rem 0;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
 }
 
