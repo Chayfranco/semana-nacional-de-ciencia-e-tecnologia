@@ -420,7 +420,6 @@ p:hover, li:hover {
     transition: transform 0.4s ease;
 }
 
-
 /* Responsivo */
 @media only screen and (max-width: 768px) {
     .conteudo-info {
