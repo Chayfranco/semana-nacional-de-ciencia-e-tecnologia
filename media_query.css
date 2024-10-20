@@ -165,7 +165,7 @@
     }
     .nome-palestrante {
         padding: 0.5rem;
-        font-size: 0.8rem; /* Reduz o tamanho da fonte para dispositivos pequenos */
+        font-size: 0.8rem;
         line-height: 1.2;
     }
 }

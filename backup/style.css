@@ -229,7 +229,6 @@ p:hover, li:hover {
     text-align: center;
 }
 
-/* Parágrafos dentro das classes .descricao-info e .descricao-info-principal */
 .descricao-info p, .descricao-info-principal p {
     color: #FFFFFF;
     font-size: 2.4rem;
@@ -334,7 +333,7 @@ p:hover, li:hover {
     margin-bottom: 4rem;
 }
 
-/* Consistent hover effect across titles and activities */
+/* hover effect across titles and activities */
 .titulo-secao, .dia-programacao, .atividade, .descricao-atividade, .subtitulo-secao, .convite h2, p, li{
     transition: color 0.4s ease, transform 0.4s ease;
 }
